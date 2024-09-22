@@ -1,9 +1,4 @@
 # NLP_Assignment_1
-CS613 NLP
-
-![tech circle](https://github.com/user-attachments/assets/4aca1382-28dc-463e-b009-af3f0b01cbc5)
-
-
 
 ASSIGNED LANGUAGE - **MARATHI**
 ---
@@ -14,11 +9,11 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 - Most of the crawling part was done on about 45 news websites
 - Other sources for crawling include Marathi Wikipedia, Shabdkosh, etc 
-- There were websites that consisted of images for which OCR data extraction was used 
+- Some websites consisted of images for which OCR data extraction was used 
 
 <h4><i>b. Downloading data from existing corpora</h4></i>
 
-- We found several sources with well curated marathi data, details of which are given in next section.
+- We found several sources with well-curated Marathi data, details of which are in the next section.
 - Data were downloaded from sources like Kaggle, Github, etc.
 
 
@@ -269,7 +264,7 @@ ASSIGNED LANGUAGE - **MARATHI**
   
 
   
-- While crawling the data we made sure each article is added as a new article  
+- While crawling the data, we made sure each article was added as a new article  
 
 
 ---
@@ -277,7 +272,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 <center style="font-size:18px"><b><u>Task 4: List of bad bad-word dictionaries for Marathi</b></u></center>
 <br>
-- We could find most of the bad words in already curated repository. https://github.com/Adi2K/MarathiSwear/blob/master/profane.txt
+- We could find most of the bad words in an already curated repository. https://github.com/Adi2K/MarathiSwear/blob/master/profane.txt
 
 
 ---
@@ -286,9 +281,9 @@ ASSIGNED LANGUAGE - **MARATHI**
 <center style="font-size:18px"><b><u>Task 5: Data Cleaning</b></u></center>
 
 
-- We removed anny other script apart form Devnagari.
+- We removed any other script apart from Devnagari.
 - We removed bad words using regex and pandas.
-- Script for cleaning can be found here.
+- The cleaning script can be found here.
 
 ---
 
@@ -360,11 +355,11 @@ ASSIGNED LANGUAGE - **MARATHI**
 |       ------------    |------------|
 | `Mukul Paras Potta` | Wrote code for crawling, crawled news websites, Wrote code for deduplication, Crawled 9 news websites|
 | `Manish Bairwa`  | Collection of Rajasthani(language assigned earlier) Data sources and scraping, Crawled 9 news websites |
-| `Isha Narang`  | Wrote code for curating data from pdf sources using OCR, Crawled 9 news websites, Created this report. |
-| `Eshwar Dhande`   | Collection of source and public datasets, Collected 45 news websites sources, Verifying and adding to the list of bad words, Crawled 9 news websites|
-| `Preyum Kumar ` |Crawled 9 news websites some of which contained pdfs and images which were retrieved using OCR |
+| `Isha Narang`  | Wrote code for curating data from pdf sources using OCR, Crawled 9 news websites, and Created this report. |
+| `Eshwar Dhande`   | Collection of source and public datasets, Collected 45 news website sources, Verifying and adding to the list of bad words, Crawled 9 news websites|
+| `Preyum Kumar ` |Crawled 9 news websites, some of which contained PDFs and images which were retrieved using OCR |
 
 
-<h4><i>Note - The earlier assigned language was Rajasthani, for which everyone equally contributed in scraping the data from collected websites.</h4></i>
+<h4><i>Note - The earlier assigned language was Rajasthani, for which everyone equally contributed to scraping the data from collected websites.</h4></i>
 ---
 
