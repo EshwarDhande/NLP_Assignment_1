@@ -10,13 +10,13 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 <center style="font-size:18px"><b><u>Task 1. Curating Dataset</b></u></center>
 
-*a. Crawling*
+  <h4><i>a. Crawling</h4></i>
 
 - Most of the crawling part was done on about 45 news websites
 - Other sources for crawling include Marathi Wikipedia, Shabdkosh, etc 
 - There were websites that consisted of images for which OCR data extraction was used 
 
-*b. Downloading data from existing corpora*
+<h4><i>b. Downloading data from existing corpora</h4></i>
 
 - We found several sources with well curated marathi data, details of which are given in next section.
 - Data were downloaded from sources like Kaggle, Github, etc.
@@ -365,6 +365,6 @@ ASSIGNED LANGUAGE - **MARATHI**
 | `Preyum Kumar ` |Crawled 9 news websites some of which contained pdfs and images which were retrieved using OCR |
 
 
-***Note - The earlier assigned language was Rajasthani, for which everyone equally contributed in scraping the data from collected websites.***
+<h4><i>Note - The earlier assigned language was Rajasthani, for which everyone equally contributed in scraping the data from collected websites.</h4></i>
 ---
 
