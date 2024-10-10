@@ -139,7 +139,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 - We removed any other script apart from Devnagari.
 - We removed bad words using regex and pandas.
-- The cleaning script can be found here.
+- The cleaning script can be found <a href = 'https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/remove_other_scripts.py'> here</a>.
 
 ---
 
