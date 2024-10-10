@@ -1,0 +1,230 @@
+/home/marathi_nlp/.local/lib/python3.6/site-packages/OpenSSL/_util.py:6: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
+  from cryptography.hazmat.bindings.openssl.binding import Binding
+2024-09-21 00:18:10 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: nlp_spiders)
+2024-09-21 00:18:10 [scrapy.utils.log] INFO: Versions: lxml 4.4.2.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.4.0, Python 3.6.8 (default, Jun 20 2023, 11:53:23) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)], pyOpenSSL 23.2.0 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform Linux-3.10.0-1160.99.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core
+2024-09-21 00:18:10 [scrapy.crawler] INFO: Overridden settings:
+{'AJAXCRAWL_ENABLED': True,
+ 'BOT_NAME': 'nlp_spiders',
+ 'CONCURRENT_REQUESTS': 100,
+ 'COOKIES_ENABLED': False,
+ 'DEPTH_PRIORITY': 1,
+ 'DOWNLOAD_TIMEOUT': 15,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'nlp_spiders.spiders',
+ 'REACTOR_THREADPOOL_MAXSIZE': 20,
+ 'RETRY_ENABLED': False,
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_DISK_QUEUE': 'scrapy.squeues.PickleFifoDiskQueue',
+ 'SCHEDULER_MEMORY_QUEUE': 'scrapy.squeues.FifoMemoryQueue',
+ 'SCHEDULER_PRIORITY_QUEUE': 'scrapy.pqueues.DownloaderAwarePriorityQueue',
+ 'SPIDER_MODULES': ['nlp_spiders.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-09-21 00:18:10 [scrapy.extensions.telnet] INFO: Telnet Password: 4a52c07e4dc60a70
+2024-09-21 00:18:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2024-09-21 00:18:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-09-21 00:18:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-09-21 00:18:10 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-09-21 00:18:10 [scrapy.core.engine] INFO: Spider opened
+2024-09-21 00:18:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-09-21 00:18:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2024-09-21 00:18:10 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/spiders/sitemap.py", line 31, in start_requests
+    yield Request(url, self._parse_sitemap)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 60, in __init__
+    self._set_url(url)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/http/request/__init__.py", line 108, in _set_url
+    raise ValueError(f'Missing scheme in request url: {self._url}')
+ValueError: Missing scheme in request url: 
+2024-09-21 00:18:45 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/post-sitemap4.xml>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/post-sitemap4.xml took longer than 15.0 seconds..
+2024-09-21 00:18:45 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/post-sitemap5.xml>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/post-sitemap5.xml took longer than 15.0 seconds..
+2024-09-21 00:18:45 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/post-sitemap6.xml>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/post-sitemap6.xml took longer than 15.0 seconds..
+2024-09-21 00:19:10 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 123 pages/min), scraped 0 items (at 0 items/min)
+2024-09-21 00:20:10 [scrapy.extensions.logstats] INFO: Crawled 394 pages (at 271 pages/min), scraped 0 items (at 0 items/min)
+2024-09-21 00:21:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-10/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-10/ took longer than 15.0 seconds..
+2024-09-21 00:21:09 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-11/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-11/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.extensions.logstats] INFO: Crawled 610 pages (at 216 pages/min), scraped 0 items (at 0 items/min)
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-3/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-3/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-2/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-2/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-7/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/08/8-may-2023-7/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-2/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-2/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-4/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-4/ took longer than 15.0 seconds..
+2024-09-21 00:21:10 [scrapy.core.scraper] ERROR: Error downloading <GET https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-5/>
+Traceback (most recent call last):
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 1657, in _inlineCallbacks
+    cast(Failure, result).throwExceptionIntoGenerator, gen
+  File "/usr/local/lib/python3.6/site-packages/contextvars/__init__.py", line 38, in run
+    return callable(*args, **kwargs)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/python/failure.py", line 514, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/middleware.py", line 49, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/twisted/internet/defer.py", line 858, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/marathi_nlp/.local/lib/python3.6/site-packages/scrapy/core/downloader/handlers/http11.py", line 360, in _cb_timeout
+    raise TimeoutError(f"Getting {url} took longer than {timeout} seconds.")
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting https://epaper.dainikmahasagar.in/2023/05/09/9-may-2023-5/ took longer than 15.0 seconds..

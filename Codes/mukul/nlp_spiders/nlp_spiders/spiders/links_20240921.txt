@@ -1,0 +1,5 @@
+https://www.lokmat.com/sitemap.xml
+https://www.loksatta.com/news-sitemap.xml
+https://www.mahasatta.com/sitemap.xml
+https://www.mahasatta.com/news-sitemap.xml
+https://www.mahasatta.com/sitemap_index.xml
