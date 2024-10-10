@@ -127,7 +127,9 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 
 <center style="font-size:18px"><b><u>Task 4: List of bad bad-word dictionaries for Marathi</b></u></center>
-<br>
+
+  <br>
+
 - We could find most of the bad words in an already curated repository. https://github.com/Adi2K/MarathiSwear/blob/master/profane.txt
 
 
@@ -136,6 +138,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 <center style="font-size:18px"><b><u><a href = "https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/remove_other_scripts.py"> 🔗 Task 5: Data Cleaning <a/> </b></u></center>
 
+<br>
 
 - We removed any other script apart from Devnagari.
 - We removed bad words using regex and pandas.
@@ -164,17 +167,21 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 ---
 <center style="font-size:18px"><b><u><a href='https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/deduplicate.py' >🔗 Task 7: Deduplication </a></u></b></center>  
+
 <br>
 
-- The script for deduplication can be found here. 
+- The script for deduplication can be found <a href='https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/deduplicate.py'>here</a>. 
 - We have utilized min hash and jaccard similarity to find if two documents are similar using threshold value of 0.2
 
 
 ---
 <center style="font-size:18px"><b><u>Task 8: Statistics</u></b></center>
 <br>
+
 stats will be updated as soon as the code execution is done.
+
 <br>
+
 
 <table>
   <tr>
