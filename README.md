@@ -5,7 +5,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 <center style="font-size:18px"><b><u>Task 1. Curating Dataset</b></u></center>
 
-  <h4><i>a. Crawling</h4></i>
+  <h4><I><a href='https://github.com/EshwarDhande/NLP_Assignment_1/tree/main/Codes/mukul/nlp_spiders'>🔗 a. Crawling </a> </h4></i>
 
 - Most of the crawling part was done on about 45 news websites
 - Other sources for crawling include Marathi Wikipedia, Shabdkosh, etc 
@@ -134,7 +134,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 ---
 
 
-<center style="font-size:18px"><b><u>Task 5: Data Cleaning</b></u></center>
+<center style="font-size:18px"><b><u><a href = "https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/remove_other_scripts.py"> 🔗 Task 5: Data Cleaning <a/> </b></u></center>
 
 
 - We removed any other script apart from Devnagari.
@@ -153,21 +153,17 @@ ASSIGNED LANGUAGE - **MARATHI**
     
   </tr>
   <tr>
-    <td style="font-size:16px">Row 1 Col1</td>
-    <td style="font-size:16px">Row 1 Col2</td>
+    <td style="font-size:16px">992308</td>
+    <td style="font-size:16px">292561</td>
     
   </tr>
-  <tr>
-    <td style="font-size:16px">Row 2 Col1</td>
-    <td style="font-size:16px">Row 2 Col2</td>
-    
-  </tr>
+  
 </table>
 
 
 
 ---
-<center style="font-size:18px"><b><u>Task 7: Deduplication</u></b></center>  
+<center style="font-size:18px"><b><u><a href='https://github.com/EshwarDhande/NLP_Assignment_1/blob/main/Codes/mukul/deduplicate.py' >🔗 Task 7: Deduplication </a></u></b></center>  
 <br>
 
 - The script for deduplication can be found here. 
@@ -201,6 +197,8 @@ ASSIGNED LANGUAGE - **MARATHI**
 
 
 ---
+All the code can be found <a href = 'https://github.com/EshwarDhande/NLP_Assignment_1/tree/main/Codes/mukul'>here</a> and <a href='https://github.com/EshwarDhande/NLP_Assignment_1/tree/main/Codes/manish_ocr_code'>here</a>.
+---
 
 ## ***Individual Contribution***
 
@@ -211,7 +209,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 |       ------------    |------------|
 | `Mukul Paras Potta` | Wrote code for crawling, crawled news websites, Wrote code for deduplication, Crawled 9 news websites|
 | `Manish Bairwa`  | Collection of Rajasthani(language assigned earlier) Data sources and scraping, Crawled 9 news websites |
-| `Isha Narang`  | Wrote code for curating data from pdf sources using OCR, Crawled 9 news websites, and Created this report. |
+| `Isha Narang`  | Wrote code for curating data from pdf sources using <a href='https://github.com/EshwarDhande/NLP_Assignment_1/tree/main/Codes/rajasthani'> OCR</a>, Crawled 9 news websites, and Created this report. |
 | `Eshwar Dhande`   | Collection of source and public datasets, Collected 45 news website sources, Verifying and adding to the list of bad words, Crawled 9 news websites|
 | `Preyum Kumar ` |Crawled 9 news websites, some of which contained PDFs and images which were retrieved using OCR |
 
