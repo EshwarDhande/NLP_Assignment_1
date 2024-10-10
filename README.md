@@ -111,7 +111,7 @@ ASSIGNED LANGUAGE - **MARATHI**
 | 36      | Divya Marathi (dainik bhaskar)     | 84              | 840 KB  |
 
 
-<center> <b> <h3> Total data collected - xyz + abc = 150GB</b></h3></center>
+<center> <b> <h3> Total data collected - 90.78 GB + 21.05 GB = 111.83 GB</b></h3></center>
 
 
 
