@@ -37,7 +37,7 @@ ASSIGNED LANGUAGE - **MARATHI**
   <tr>
     <td style="font-size:16px">Samanantar</td>
     <td style="font-size:16px">0.61</td>
-    <td style="font-size:16px">Row 2 Col3</td>
+    <td style="font-size:16px">4970000</td>
   </tr>
   <tr>
     <td style="font-size:16px">Sangrah</td>
@@ -47,22 +47,22 @@ ASSIGNED LANGUAGE - **MARATHI**
   <tr>
     <td style="font-size:16px">MNATD</td>
     <td style="font-size:16px">5</td>
-    <td style="font-size:16px">Row 2 Col3</td>
+    <td style="font-size:16px">count is unavailable</td>
   </tr>
   <tr>
     <td style="font-size:16px">CulturaX</td>
     <td style="font-size:16px">16.93</td>
-    <td style="font-size:16px">Row 2 Col3</td>
+    <td style="font-size:16px">count is unavailable</td>
   </tr>
   <tr>
     <td style="font-size:16px">MADLAD-400</td>
     <td style="font-size:16px">21</td>
-    <td style="font-size:16px">Row 2 Col3</td>
+    <td style="font-size:16px">count is unavailable</td>
   </tr>
   <tr>
     <td style="font-size:16px">Glot500-c</td>
     <td style="font-size:16px">9.2</td>
-    <td style="font-size:16px">Row 2 Col3</td>
+    <td style="font-size:16px">count is unavailable</td>
   </tr>
 
 </table>
