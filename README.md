@@ -173,6 +173,8 @@ ASSIGNED LANGUAGE - **MARATHI**
 ---
 <center style="font-size:18px"><b><u>Task 8: Statistics</u></b></center>
 <br>
+stats will be updated as soon as the code execution is done.
+<br>
 
 <table>
   <tr>
